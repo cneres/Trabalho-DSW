@@ -1,0 +1,63 @@
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="css/Estilos.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title>
+    <title>Dados</title>
+</head>
+<body id="Recebido">
+    <header id="Aluno">  Desenvolvimento Web I</header>
+    <nav id="Aluno">
+        <ul>
+
+            <li><a href="file:///C:/Users/Win10/Desktop/PROJETOS/Trabalho-DSW/Index.html">Index</a></li>
+            <li><a href="file:///C:/Users/Win10/Desktop/PROJETOS/Trabalho-DSW/Aluno1.html#"
+                    style="text-decoration:none">Aluno</a></li>
+            <li><a href="C:\Users\Win10\Desktop\PROJETOS\Trabalho-DSW\Contato.html"
+                    style="text-decoration:none">Contato</a></li>
+        </ul>
+    </nav>
+
+    <div id="Dados">
+
+        <h2>Nome:</h2>
+        <p id="nome"></p>
+        <h2>Email:</h2>
+        <p id="email"></p>
+        <h2>Telefone:</h2>
+        <p id="telefone"></p>
+        <h2>Prioridade:</h2>
+        <p id="prioridade"></p>
+        <h2>Mensagem:</h2>
+        <p id="mensagem"></p>
+
+    </div>
+
+
+    <footer class="Dark">
+        &copy; Desenvolvido por Carlos Neres - 2020
+
+    </footer>
+</body>
+<script>
+
+var urlP = new URLSearchParams(window.location.search);
+var nome = urlP.get('nome');
+document.getElementById('nome').innerHTML = (nome);
+
+var email = urlP.get('email');
+document.getElementById('email').innerHTML = (email);
+
+var telefone = urlP.get('telefone');
+document.getElementById('telefone').innerHTML = (telefone);
+
+var prioridade= urlP.get('prioridade');
+document.getElementById('prioridade').innerHTML = (prioridade);
+
+var mensagem = urlP.get('mensagem');
+document.getElementById('mensagem').innerHTML = (mensagem);
+
+
+</script>
+
+</html>
